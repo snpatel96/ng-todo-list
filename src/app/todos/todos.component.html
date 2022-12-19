@@ -1,0 +1,23 @@
+<div style="width: 80%; margin: auto">
+  <div class="input-group mt-4 mb-4">
+    <input
+      type="text"
+      class="form-control w-sm"
+      placeholder="Enter Todo"
+      aria-label="Recipient's username"
+      aria-describedby="button-addon2"
+      [(ngModel)]="todoName"
+      required=""
+    />
+    <button
+      (click)="onAdd()"
+      class="btn btn-outline-primary"
+      type="button"
+      id="button-addon2"
+    >
+      Add Todo
+    </button>
+  </div>
+
+  <app-todo-list [todos]="todos"></app-todo-list>
+</div>
